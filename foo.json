@@ -1,0 +1,35 @@
+{
+  "persons": [
+    {
+      "userId": "kumar"
+    },
+    {
+      "userId": "sai"
+    },
+    {
+      "userId": "pankaj"
+    }
+  ],
+  "connections": [
+    {
+      "source": 0,
+      "target": 1,
+      "properties": [
+        {
+          "location": "Boots Heathrow Terminal 3, Floor 3",
+          "timestamp": 1122343344
+        }
+      ]
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "properties": [
+        {
+          "location": "Boots Heathrow Terminal 3, Floor 3",
+          "timestamp": 1122343344
+        }
+      ]
+    }
+  ]
+}
