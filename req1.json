@@ -7,21 +7,6 @@
       "value": "hitId"
     },
     {
-      "field": "nationality",
-      "operator": "EqualTo",
-      "value": "GBR"
-    },
-    {
-      "field": "nationality",
-      "operator": "EqualTo",
-      "value": "IND"
-    },
-    {
-      "field": "nationality",
-      "operator": "EqualTo",
-      "value": "GBR"
-    },
-    {
       "field": "age",
       "operator": "LesserThanEqualTo",
       "value": 10
@@ -30,12 +15,21 @@
       "field": "location",
       "operator": "ArrayContains",
       "value": 10
-    },
-    {
-      "field": "location",
-      "operator": "ArrayContainsAll",
-      "value": ["a", "b"]
     }
-
-  ]
+  ],
+  "nested": {
+    "groupType": "OR",
+    "predicates": [
+      {
+        "field": "nationality",
+        "operator": "EqualTo",
+        "value": "GBR"
+      },
+      {
+        "field": "nationality",
+        "operator": "EqualTo",
+        "value": "IND"
+      }
+    ]
+  }
 }

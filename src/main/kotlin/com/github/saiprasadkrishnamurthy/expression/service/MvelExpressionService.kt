@@ -15,7 +15,7 @@ class MvelExpressionService constructor(private val mvelOperatorRepository: Mvel
     private fun buildConditions(out: StringBuilder, blueprintPredicateGroup: PredicateGroup?, previous: PredicateGroup?, first: Boolean) {
         if (blueprintPredicateGroup != null) {
             if (!first)
-                out.append(" ").append(previous?.groupType?.name)
+                out.append(" ").append(blueprintPredicateGroup?.groupType?.name)
             val clauses = blueprintPredicateGroup.predicates.joinToString(separator = " ${blueprintPredicateGroup.groupType.name} ") {
                 clauses(it)
             }
